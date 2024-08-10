@@ -5,7 +5,7 @@ import { FaFacebookF, FaWhatsapp, FaInstagram } from 'react-icons/fa';
 const HeroSection: React.FC = () => {
   return (
     <section id="home" className="pt-16 bg-gray-100 min-h-screen flex flex-col items-center justify-center text-center">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 pt-16">
         <div className="relative group">
           <Image
             src="/images/mazdacar.png"
