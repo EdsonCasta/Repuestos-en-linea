@@ -51,13 +51,13 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <section id='contact' className="flex w-full p-2 pt-20">
-      <div className="flex-1">
+    <section id='contact' className="flex flex-col md:flex-row w-full md:p-4 gap-10">
+      <div className="md:flex-1">
         <ContactInfo />
       </div>
-      <div className="flex-1 bg-white shadow-md rounded-lg border border-gray-200">
-        <form onSubmit={handleSubmit} className="flex-1 p-10">
-          <h2 className="text-2xl font-semibold mb-2 text-center text-gray-800">Contáctanos</h2>
+      <div className="md:flex-1 bg-white shadow-lg rounded-xl border border-gray-200 md:p-8">
+        <form onSubmit={handleSubmit} className="flex flex-col max-w-lg mx-auto">
+          <h2 className="text-2xl text-center font-bold mb-5">Contáctanos</h2>
 
           <div className="mb-2">
             <label className="block text-gray-700 font-bold mb-2" htmlFor="name">Nombre:</label>
@@ -67,14 +67,14 @@ const ContactForm: React.FC = () => {
               id="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="nombre y apellido"
+              placeholder="Nombre y apellido"
               required
-              className={`w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#14213d] focus:border-transparent ${errors.name ? 'border-red-500' : ''}`}
+              className={`w-full px-4 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#14213d] focus:border-transparent ${errors.name ? 'border-red-500' : ''}`}
             />
             {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
           </div>
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label className="block text-gray-700 font-bold mb-2" htmlFor="email">Correo electrónico:</label>
             <input
               type="email"
@@ -84,12 +84,12 @@ const ContactForm: React.FC = () => {
               onChange={handleChange}
               placeholder="ejemplo@correo.com"
               required
-              className={`w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#14213d] focus:border-transparent ${errors.email ? 'border-red-500' : ''}`}
+              className={`w-full px-4 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#14213d] focus:border-transparent ${errors.email ? 'border-red-500' : ''}`}
             />
             {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
           </div>
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label className="block text-gray-700 font-bold mb-2" htmlFor="phone">Celular:</label>
             <input
               type="tel"
@@ -99,12 +99,12 @@ const ContactForm: React.FC = () => {
               onChange={handleChange}
               placeholder="10 dígitos - sin espacios ni guiones"
               required
-              className={`w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#14213d] focus:border-transparent ${errors.phone ? 'border-red-500' : ''}`}
+              className={`w-full px-4 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#14213d] focus:border-transparent ${errors.phone ? 'border-red-500' : ''}`}
             />
             {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
           </div>
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label className="block text-gray-700 font-bold mb-2" htmlFor="message">Mensaje:</label>
             <textarea
               name="message"
@@ -113,17 +113,17 @@ const ContactForm: React.FC = () => {
               onChange={handleChange}
               placeholder="Escribe tu mensaje aquí..."
               required
-              className={`w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#14213d] focus:border-transparent ${errors.message ? 'border-red-500' : ''}`}
+              className={`w-full px-4 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#14213d] focus:border-transparent ${errors.message ? 'border-red-500' : ''}`}
               rows={5}
             />
             {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
           </div>
 
-          <div className="text-center">
+          <div className="text-left px-4">
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`w-full bg-[#fca311] hover:bg-[#14213d] text-[#14213d] hover:text-[#e5e5e5] font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#fca311] focus:ring-offset-2 transition duration-150 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
+              className={`w-40 bg-[#fca311] hover:bg-[#14213d] text-[#14213d] hover:text-[#e5e5e5] font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-[#fca311] focus:ring-offset-2 transition duration-150 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
             >
               {isSubmitting ? 'Enviando...' : 'Enviar'}
             </button>
