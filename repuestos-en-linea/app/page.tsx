@@ -6,7 +6,7 @@ import ContactForm from '@/components/ContactForm';
 
 const HomePage: React.FC = () => {
   return (
-    <div>
+    <div className="space-y-8">
       <Header />
       <HeroSection />
       <Features />
