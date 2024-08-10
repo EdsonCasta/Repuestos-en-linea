@@ -24,7 +24,7 @@ const ContactInfo: React.FC = () => {
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="text-xl text-[#fca311] hover:text-[#14213d]" />
                 </a>
-                <a href="https://wa.me/573183704645" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/573183704645?text=Hola,%20estoy%20interesado%20en%20sus%20productos" target="_blank" rel="noopener noreferrer">
                     <FaWhatsapp className="text-xl text-[#fca311] hover:text-[#14213d]" />
                 </a>
             </div>
