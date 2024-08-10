@@ -51,12 +51,12 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <section id='contact' className="flex flex-col md:flex-row w-full md:p-4 gap-10">
+    <section id='contact' className="flex flex-col md:flex-row w-full md:p-4 gap-10 pt-20">
       <div className="md:flex-1">
         <ContactInfo />
       </div>
       <div className="md:flex-1 bg-white shadow-lg rounded-xl border border-gray-200 md:p-8">
-        <form onSubmit={handleSubmit} className="flex flex-col max-w-lg mx-auto">
+        <form onSubmit={handleSubmit} className="flex flex-col max-w-lg mx-auto p-5">
           <h2 className="text-2xl text-center font-bold mb-5">Contáctanos</h2>
 
           <div className="mb-2">

@@ -3,7 +3,7 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white py-1">
-      <div className="container mx-auto hover:text-[#fca311]">
+      <div className="container mx-auto hover:text-[#fca311] px-5">
         <p>&copy; 2024 Repuestos en Línea.</p>
       </div>
     </footer>
