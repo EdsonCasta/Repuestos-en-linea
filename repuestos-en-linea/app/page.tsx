@@ -3,6 +3,7 @@ import HeroSection from '@/components/HeroSection';
 import Features from '@/components/Features';
 import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
+import WhatsAppChatWidget from '@/components/WhatsAppChatWidget';
 
 const HomePage: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage: React.FC = () => {
       <Features />
       <ContactForm />
       <Footer />
+      <WhatsAppChatWidget />
     </div>
   );
 };
