@@ -18,10 +18,10 @@ const ContactInfo: React.FC = () => {
                 <span>WhatsApp: +57 318 3704645</span>
             </div>
             <div className="flex space-x-8 mb-10">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/profile.php?id=61559420653844" target="_blank" rel="noopener noreferrer">
                     <FaFacebookF className="text-xl text-[#fca311] hover:text-[#14213d]" />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/repuestos_en_linea_bogota" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="text-xl text-[#fca311] hover:text-[#14213d]" />
                 </a>
                 <a href="https://wa.me/573183704645?text=Hola,%20estoy%20interesado%20en%20sus%20productos" target="_blank" rel="noopener noreferrer">
